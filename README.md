@@ -9,3 +9,7 @@ A simple quiz/testing system with Laravel with Livewire components.
 * Admin
 * Social Media login
 * Admin Dashboard etc.
+
+# Social Media:
+* Login Register using git,facebook,google
+* Using Package official Laravel package Laravel socialite (https://laravel.com/docs/10.x/socialite)
