@@ -22,6 +22,7 @@
                             <thead>
                                 <tr>
                                     <th class="w-16 bg-gray-50 px-6 py-3 text-left">
+                                        <span class="text-xs font-medium uppercase leading-4 tracking-wider text-gray-500">ID</span>
                                     </th>
                                     <th class="bg-gray-50 px-6 py-3 text-left">
                                         <span class="text-xs font-medium uppercase leading-4 tracking-wider text-gray-500">Question text</span>
