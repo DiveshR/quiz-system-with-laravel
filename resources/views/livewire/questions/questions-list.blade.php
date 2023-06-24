@@ -60,6 +60,7 @@
                             </tbody>
                         </table>
             </div>
+            {{ $questions->links() }}
             </div>
         </div>
     </div>
