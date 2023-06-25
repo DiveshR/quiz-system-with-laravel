@@ -5,6 +5,7 @@ namespace App\Http\Livewire\Questions;
 use Livewire\Component;
 use Illuminate\Contracts\View\View;
 use App\Models\Question;
+use Symfony\Component\HttpFoundation\Response;
 
 class QuestionsList extends Component
 {
@@ -17,5 +18,7 @@ class QuestionsList extends Component
     public function delete(Question $question): void
     {
         abort_if(!auth()->user()->is_admin, Response::HTTP_FORBIDDEN, '403 Forbidden');
+
+        $question->delete();
     }
 }

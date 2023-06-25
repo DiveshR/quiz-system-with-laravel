@@ -4,12 +4,14 @@ namespace App\Http\Livewire\Quiz;
 
 use Livewire\Component;
 use App\Models\Quiz;
+use Symfony\Component\HttpFoundation\Response;
 
 class QuizList extends Component
 {
     public function render()
     {
-        $quizzes = Quiz::latest()->paginate();
+        // $quizzes = Quiz::latest()->paginate();
+        $quizzes = Quiz::withCount('questions')->latest()->paginate();
         return view('livewire.quiz.quiz-list', compact('quizzes'));
     }
 
